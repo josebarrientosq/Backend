@@ -20,21 +20,23 @@
       <h1>Buscador</h1>
     </div>
     <div class="colFiltros">
-      <form action="buscador.php" method="post" id="formulario">
+      <!--<form action="buscador.php" method="post" id="formulario">-->
+      <form id="formulario">
         <div class="filtrosContenido">
           <div class="tituloFiltros">
             <h5>Realiza una búsqueda personalizada</h5>
           </div>
           <div class="filtroCiudad input-field">
-            <label for="selectCiudad">Ciudad:</label>
+            <label class="etiqueta" for="selectCiudad">Ciudad:</label>
             <select name="ciudad" id="selectCiudad">
-              <option value="new" selected>Elige una ciudad</option>
+              <option value="nulo" >Elige una ciudad</option>
+              
             </select>
           </div>
           <div class="filtroTipo input-field">
-            <label for="selecTipo">Tipo:</label><br>
-            <select name="tipo" id="selectTipo">
-              <option value="vla" selected>Elige un tipo</option>
+            <label class="etiqueta" for="selecTipo">Tipo:</label><br>
+            <select  name="tipo" id="selectTipo">
+              <option value="nulo" selected>Elige un tipo</option>
             </select>
           </div>
           <div class="filtroPrecio">
@@ -42,7 +44,7 @@
             <input type="text" id="rangoPrecio" name="precio" value="" />
           </div>
           <div class="botonField">
-            <input type="submit" class="btn white" value="Buscar" id="submitButton">
+            <input  class="btn white" value="Buscar" id="submitButton">
           </div>
         </div>
       </form>
